@@ -91,11 +91,13 @@ To make the coloring book to open to a random page when first loaded, use the `r
 ### Advanced customization of the layout.
 Want bigger buttons? Want it to look a particular way on mobile? Want to change the look entirely? You'll need to create a custom theme file and edit to your liking. You will have to tell the component to use this css file by using the `css` attribute.
 
+```
 <jl-coloringbook css="./customizedThene.css">
 	<img src="./images/astronaut.png" />
 	<img src="./images/eagle.png" />
 	<img src="./images/glass.jpg" />
 </jl-coloringbook>
+```
 
 ### "Outer CSS" rules.
 
