@@ -33,7 +33,7 @@ Your page will need jquery on it already, which most websites already have. If n
 
 You can embed that code either in the head of your page, or somewhere prior to calling the tag. If you're using wordpress or another content manatement system, it likely already has jquery installed so ignore it unless the coloring book fails to initialize.
 
-### Upload and call the jl-coloringBook.js file.
+### Upload and call the jl-coloringBook.js file (or point to CDN).
 
 Include the following code somewhere near top of your HTML, preferably in the `<head>` section:
 
@@ -41,6 +41,12 @@ Include the following code somewhere near top of your HTML, preferably in the `<
 <script src="/PathToFile/js-coloringBook.js"></script>
 
 ```
+
+To pull the file from jsDelivr CDN use the following..
+```
+<script src="https://cdn.jsdelivr.net/gh/collinph/jl-coloringbook/jl-coloringBook.js"></script>
+```
+
 ## Simple Use
 
 JL Coloring book works in its most simple form by wrapping a group of  `<img>` tags  with the `<jl-coloringbook>` tag.
