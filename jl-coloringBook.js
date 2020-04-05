@@ -510,7 +510,6 @@ customElements.define('jl-coloringbook', class extends HTMLElement
         let width=this.img[0].naturalWidth;
         let ctx=this.ctx;
         ctx.clearRect(0, 0, width, height);
-                    
         for (let i=0; i<this.paths.length; ++i) {
             let path = this.paths[i];
             if (path.length<1) continue;
