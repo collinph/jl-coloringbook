@@ -489,7 +489,7 @@ customElements.define('jl-coloringbook', class extends HTMLElement
             ctx.strokeStyle = `${this.paletteColors[path[0].c]}`;
             ctx.lineCap = 'round';
             ctx.lineJoin = 'round';
-            ctx.lineWidth = path[0].s;
+            ctx.lineWidth = path[0].s * (this.img[0].naturalWidth/this.img.width());
             if (path[0].c==(this.paletteColors.length-1)) 
             {
                 /*eraser*/
@@ -518,7 +518,7 @@ customElements.define('jl-coloringbook', class extends HTMLElement
             ctx.strokeStyle = `rgba(${this.paletteColors[path[0].c]}, 0.8)`;
             ctx.lineCap = 'round';
             ctx.lineJoin = 'round';
-            ctx.lineWidth = path[0].s;
+            ctx.lineWidth = path[0].s * (this.img[0].naturalWidth/this.img.width());
             if (path[0].c==(this.paletteColors.length-1)) 
             {
                 /* eraser*/
@@ -542,8 +542,6 @@ customElements.define('jl-coloringbook', class extends HTMLElement
     setCursor()
     {
         let size = this.sizer.val();
-
-        size=(this.img.width()/this.img[0].naturalWidth) * size;
         if (size < 2) size=2;
         if (size > 32) size=32;
         let canvas=jQuery(`<canvas height="32" width="32"/>`);
