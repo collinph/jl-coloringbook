@@ -94,6 +94,17 @@ To make the coloring book to open to a random page when first loaded, use the `r
 </jl-coloringbook>
 ```
 
+### Max Brush size
+
+The default maximum brush size is 32 (px) because most browsers do not support a cursor larger than 32x32. You can make the max brush size larger than 32, however the cursor size won't grow beyond 32px. To increase the max brush size, use the `maxbrushsize` attribute.
+```
+<jl-coloringbook maxbrushsize="32">
+	<img src="./images/astronaut.png" />
+	<img src="./images/eagle.png" />
+	<img src="./images/glass.jpg" />
+</jl-coloringbook>
+```
+
 ### Advanced customization of the layout.
 Want bigger buttons? Want it to look a particular way on mobile? Want to change the look entirely? You'll need to create a custom theme file and edit to your liking. You will have to tell the component to use this css file by using the `css` attribute.
 
