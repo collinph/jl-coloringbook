@@ -1,0 +1,80 @@
+<html style="height:300vh">
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="../jl-coloringBook.js"></script>
+
+<body>
+
+	<!--
+
+  /*
+    Copyright 2020 Joseph Love, primoweb.com, joe@primoweb.com
+    This component is free to use provided that this notice is not altered or removed.
+    Donations are accepted to continue the development of more open source projects. Paypal address: joe@primoweb.com
+
+*/
+
+	-->
+
+<!-- example 1, simgle image -->
+<h1> Example 1: Single Image with defined width</h1>
+
+    <jl-coloringbook style="width:300px">
+      <img src="./images/astronaut.png" />
+    </jl-coloringbook>
+    <br/><br><br/><br><br/><br>
+
+<h1> Example 2: Multiple images with a custom color palette. Flexible width based on container.</h1>
+<h2> Any number of colors or pallets are possible. The last color is always the eraser tool </h2>
+<div style="width:50vh">
+    <jl-coloringbook>
+      <i color="rgba(87, 87, 87,0.8)"></i>
+      <i color="rgba(220, 35, 35,0.8)"></i>
+      <i color="rgba(42, 75, 215,0.8)"></i>
+      <i color="rgba(29, 105, 20,0.8)"></i>
+      <i color="rgba(129, 74, 25,0.8)"></i>
+      <i color="rgba(129, 38, 192,0.8)"></i>
+      <i color="rgba(160, 160, 160,0.8)"></i>
+      <i color="rgba(129, 197, 122,0.8)"></i>
+      <i color="rgba(157, 175, 255,0.8)"></i>
+      <i color="rgba(41, 208, 208,0.8)"></i>
+      <i color="rgba(255, 146, 51,0.8)"></i>
+      <i color="rgba(255, 238, 51,0.8)"></i>
+      <i color="rgba(233, 222, 187,0.8)"></i>
+      <i color="rgba(255, 205, 243,0.8)"></i>
+      <i color="rgba(255, 255, 255,0.8)"></i>
+      <i color="rgba(255, 255, 255)"></i>
+      <img src="./images/astronaut.png" />
+      <img src="./images/eagle.png" />
+      <img src="./images/glass.jpg" />
+    </jl-coloringbook>
+</div>
+<br/><br/><br/>
+<h1> Example 3: Randomize which image is loaded first, and use a custom theme.
+<h2>Brush size enlarged also. Default Size=32</h2>
+
+  <jl-coloringbook randomize="true" css="./customizedTheme.css" maxbrushsize="100">
+    <i color="rgba(87, 87, 87,0.8)"></i>
+    <i color="rgba(220, 35, 35,0.8)"></i>
+    <i color="rgba(42, 75, 215,0.8)"></i>
+    <i color="rgba(29, 105, 20,0.8)"></i>
+    <i color="rgba(129, 74, 25,0.8)"></i>
+    <i color="rgba(129, 38, 192,0.8)"></i>
+    <i color="rgba(160, 160, 160,0.8)"></i>
+    <i color="rgba(129, 197, 122,0.8)"></i>
+    <i color="rgba(157, 175, 255,0.8)"></i>
+    <i color="rgba(41, 208, 208,0.8)"></i>
+    <i color="rgba(255, 146, 51,0.8)"></i>
+    <i color="rgba(255, 238, 51,0.8)"></i>
+    <i color="rgba(233, 222, 187,0.8)"></i>
+    <i color="rgba(255, 205, 243,0.8)"></i>
+    <i color="rgba(255, 255, 255,0.8)"></i>
+    <i color="rgba(255, 255, 255)"></i>
+    <img src="./images/astronaut.png" />
+    <img src="./images/eagle.png" />
+    <img src="./images/glass.jpg" />
+  </jl-coloringbook>
+</body>
+</html>

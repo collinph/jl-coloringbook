@@ -1,0 +1,95 @@
+/*
+    Copyright 2020 Joseph Love, primoweb.com, joe@primoweb.com
+    This component is free to use provided that this notice is not altered or removed.
+    Donations are accepted to continue the development of more open source projects. Paypal address: joe@primoweb.com
+
+*/
+
+
+/* Below is the entire default theme of the plugin. This file is NOT required. 
+ if the "css" attribute in the tag points to this or any other CSS file, it can override default functionality.
+ Many other rules are possible, and ONLY overrides are required in this file. You an omit any rules you wish to remain at their default
+ values. If you wish to use a theme file, use <jl-coloringbook css="pathtotheme.css"
+*/
+
+
+
+
+  /*default theme*/
+.imageNav img {
+    box-sizing:border-box;
+    border:3px solid transparent;
+    width:12%; min-width:75px; max-width:150px;
+    margin:4px;
+}
+.imageNav img.selected {
+    border: 3px solid green; 
+  
+}
+.toolbar {
+    z-index:100000;
+    position: sticky;  position: -webkit-sticky; 
+    top: 0;
+    background-color: rgba(200,200,200,.1) 
+}
+.tools {
+    display:flex;
+    justify-content:flex-end;
+    flex-wrap:wrap;
+    max-width:100%;
+}
+.sizerTool {
+    cursor:inherit;
+    align-self:flex-start;
+    width:64px;
+}
+.spacer {
+    flex-basis:0;
+    flex-grow:1;
+}
+.tools > * {margin:2px}
+.palette {
+    display:inline-block;
+}
+.paletteColor {
+    text-align:center; 
+    height:28px;
+    width:28px;
+    margin:2px;
+    border-radius:50%;
+    box-sizing:border-box; 
+    border:3px solid rgba(232,232,232,1); 
+    display:inline-block; 
+    overflow:hidden;
+}
+.paletteColor.selected {
+    border-color:black;
+    transform: scale(1.2);
+}
+
+.paletteColor.eraser { border-color: red; background-image: linear-gradient(135deg,white 43%, red 45%, red 55%, white 57%, white)}
+
+
+.canvasWrapper {
+    display:inline-block;
+    position:relative;
+    width:100%
+}
+.canvas {
+    z-index:1000;
+    position:absolute;
+    top:0;left:0;
+    width:100%;
+}
+.activeCanvas {
+    z-index:1001;
+    position:absolute;
+    top:0;left:0;
+    width:100%;
+}
+.canvasBackgroundImage{width:100%}
+
+.undoButton > i::after{ content: "undo"}
+.clearButton > i::after{ content: "clear"}
+.printButton > i::after{ content: "print"}
+.saveButton > i::after{ content: "save"}
