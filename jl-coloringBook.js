@@ -514,7 +514,7 @@ customElements.define('jl-coloringbook', class extends HTMLElement
             let path = this.paths[i];
             if (path.length<1) continue;
             if (!path[0].c) { path[0].c=0;}
-            ctx.strokeStyle = `rgba(${this.paletteColors[path[0].c]}, 0.8)`;
+            ctx.strokeStyle = `${this.paletteColors[path[0].c]}`;
             ctx.lineCap = 'round';
             ctx.lineJoin = 'round';
             ctx.lineWidth = path[0].s * (this.img[0].naturalWidth/this.img.width());
