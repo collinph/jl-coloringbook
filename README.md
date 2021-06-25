@@ -18,7 +18,7 @@ A single javascript file that creates a custom HTML tag (webcomponent) that can 
 
 ## Demo
 
-Visit [primoweb.com/vfc-coloring-book] for a demo of the script embeded into a busy wordpress design.
+Visit https://primoweb.com/vfc-coloring-book for a demo of the script embeded into a busy wordpress design.
 See the examples folder for more.
 
 ## Prerequisites
