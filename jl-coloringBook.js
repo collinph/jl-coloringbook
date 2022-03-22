@@ -14,7 +14,7 @@ customElements.define('jl-coloringbook', class extends HTMLElement
         this.loadIcons();
     }
 
-    connectedCallback()
+    init()
     {
         jQuery(this).css('display','block');
         //default colors
@@ -40,10 +40,21 @@ customElements.define('jl-coloringbook', class extends HTMLElement
         this.slots=jQuery(`<div class="slots" style="display:none"><slot></slot></div>`).appendTo(this.shadowRoot)
     
 
-        this.slots.on('slotchange', function()
-            {
-                me.drawTemplate()
-            });
+        this.slots.off('slotchange').on('slotchange', function()
+        {
+            me.drawTemplate()
+        });
+    }
+
+    connectedCallback()
+    {
+        let auto =jQuery(this).attr('autoinit');
+
+        if (auto!=='0')
+        {
+            this.init();
+        } 
+    
     }
 
     loadIcons()

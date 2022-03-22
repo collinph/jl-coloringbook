@@ -76,5 +76,19 @@
     <img src="./images/eagle.png" />
     <img src="./images/glass.jpg" />
   </jl-coloringbook>
+  <br/><br/><br/>
+  <h1> Example 4: Dynamic content (skip autoinit) </h1>
+  <h2>Could, for example, populate img tags from JSON file or a javascript function.</h2>
+
+    <jl-coloringbook id="dynamic" style="width:300px" autoinit="0">
+    </jl-coloringbook>
+    <script>
+    //find correct jl-coloringbook element
+    $('#dynamic')
+      //Append image(s) to it with whatever code you want to use.
+      .append(`<img src="./images/astronaut.png" />`)
+      // then call the init() function to let Jl-colorinbgook render.  
+      [0].init();
+    </script>
 </body>
 </html>
