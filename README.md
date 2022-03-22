@@ -14,6 +14,7 @@ A single javascript file that creates a custom HTML tag (webcomponent) that can 
 * Customizable color palette.
 * Will not interfere with your website's CSS, and your website will not interfere with how the component is themed.
 * Full Themeable without editing javascript code.
+* AutoInit can be disabled, allowing custom JS to asyncronously gather image names and initialize afterwards.
 
 
 ## Demo
@@ -115,7 +116,16 @@ Want bigger buttons? Want it to look a particular way on mobile? Want to change 
 	<img src="./images/glass.jpg" />
 </jl-coloringbook>
 ```
-
+### Delayed initialization 
+Need to build the image list dynamically? Perhaps you need to fetch the image data from a JSON file and build the img tags after they load? Just tyrn off autoinit and call init() after the dom for the tag is completely built.
+````
+<jl-coloringbook autoinit="0" id="dynamic">
+</jl-coloringbook>
+<script>
+$('#dynamic').append('<img src="some_image_name_i_dynamically_determined" />').append('<img src="repeat_as_much_as_you_want.png"/>');
+$('#dynamic')[0].init(); // initialize one time after dom updated with config tags
+</script>
+````
 ### "Outer CSS" rules.
 
 CSS Classes or rules can be used on the `jl-coloringbook` tag to force it to render at specific widths or alignments like you would any <div> or section of your site.
@@ -124,5 +134,5 @@ CSS Classes or rules can be used on the `jl-coloringbook` tag to force it to ren
 Due to the way browser security is concerned, images should be hosted on the same server as the website (they usually are). You can get around this with proper CORS rules, however, that's outside the scope of this document. You'll know that you're violating CORS rules if the print and save function doesn't work.
 ## Licensing
 
-This project is free to be used on any site free of charge. If you enjoy this project and would like to its continued development, I accept tips via paypal at [mailto](mailto:joe@primoweb.com)
-Copyright 2020, Joe Love
+This project is free to be used on any site free of charge. If you enjoy this project and would like to its continued development, I accept tips via paypal at [joe@primoweb.com](mailto:joe@primoweb.com)
+Copyright 2020,2021,2022, Joe Love
