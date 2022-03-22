@@ -134,5 +134,5 @@ CSS Classes or rules can be used on the `jl-coloringbook` tag to force it to ren
 Due to the way browser security is concerned, images should be hosted on the same server as the website (they usually are). You can get around this with proper CORS rules, however, that's outside the scope of this document. You'll know that you're violating CORS rules if the print and save function doesn't work.
 ## Licensing
 
-This project is free to be used on any site free of charge. If you enjoy this project and would like to its continued development, I accept tips via paypal at [mailto](mailto:joe@primoweb.com)
-Copyright 2020, Joe Love
+This project is free to be used on any site free of charge. If you enjoy this project and would like to its continued development, I accept tips via paypal at [joe@primoweb.com](mailto:joe@primoweb.com)
+Copyright 2020,2021,2022, Joe Love
