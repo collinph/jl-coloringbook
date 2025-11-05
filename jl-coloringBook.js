@@ -1,6 +1,6 @@
 "use strict";
 /*
-    Copyright 2020 Joseph Love, primoweb.com, joe@primoweb.com
+    Copyright 2025 Joseph Love, primoweb.com, joe@primoweb.com
     This component is free to use provided that this notice is not altered or removed.
     Donations are accepted to continue the development of more open source projects. Paypal address: joe@primoweb.com
 
