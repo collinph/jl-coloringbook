@@ -37,7 +37,7 @@ Include the following code somewhere near top of your HTML, preferably in the `<
 
 To pull the file from jsDelivr CDN use the following..
 ```
-<script src="https://cdn.jsdelivr.net/gh/collinph/jl-coloringbook/jl-coloringBook.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/collinph/jl-coloringbook@latest/jl-coloringBook.js"></script>
 ```
 
 ## Simple Use
