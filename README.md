@@ -24,15 +24,7 @@ See the examples folder for more.
 
 ## Prerequisites
 
-###jQuery 3+
-
-Your page will need jquery on it already, which most websites already have. If not, you can include it as simply as
-
-```
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"</script>
-```
-
-You can embed that code either in the head of your page, or somewhere prior to calling the tag. If you're using wordpress or another content manatement system, it likely already has jquery installed so ignore it unless the coloring book fails to initialize.
+###No additional libraries required
 
 ### Upload and call the jl-coloringBook.js file (or point to CDN).
 
